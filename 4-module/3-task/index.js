@@ -6,7 +6,7 @@ function highlight(table) {
     if (td.getAttribute("data-available") === "true") {
       row.classList.add("available");
     } else if (td.getAttribute("data-available") === null) {
-      row.setAttribute("hidden", "");
+      row.hidden = true;
     } else {
       row.classList.add("unavailable");
     }
