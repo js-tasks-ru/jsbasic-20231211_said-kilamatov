@@ -136,6 +136,7 @@ export default class StepSlider {
     });
 
     this.thumb.addEventListener("pointerup", () => {
+      this.dispatchSliderChangeEvent();
       document.removeEventListener("pointerup", onMouseUp);
       document.removeEventListener("pointermove", pointerMove);
     });
